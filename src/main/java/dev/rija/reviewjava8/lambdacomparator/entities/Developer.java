@@ -1,4 +1,4 @@
-package dev.rija.reviewjava8.lambdacomparator;
+package dev.rija.reviewjava8.lambdacomparator.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
