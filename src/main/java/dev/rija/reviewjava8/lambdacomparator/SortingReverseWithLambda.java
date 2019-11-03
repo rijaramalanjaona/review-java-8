@@ -20,6 +20,7 @@ public class SortingReverseWithLambda {
         developers.sort(salaryComparator.reversed());
 
         System.out.println("After Sort");
-        developers.forEach(developer -> System.out.println(developer));
+        // using method references
+        developers.forEach(System.out::println);
     }
 }
