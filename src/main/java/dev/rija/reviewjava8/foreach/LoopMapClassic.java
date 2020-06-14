@@ -2,7 +2,6 @@ package dev.rija.reviewjava8.foreach;
 
 import dev.rija.reviewjava8.foreach.utils.DataGenerator;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class LoopMapClassic {

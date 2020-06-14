@@ -11,9 +11,7 @@ public class SortingReverseWithLambda {
         List<Developer> developers = DeveloperHelper.getDevelopers();
 
         System.out.println("Before Sort");
-        for (Developer developer : developers) {
-            System.out.println(developer);
-        }
+        developers.forEach(System.out::println);
 
         // sort by salary
         Comparator<Developer> salaryComparator = Comparator.comparing(Developer::getSalary);

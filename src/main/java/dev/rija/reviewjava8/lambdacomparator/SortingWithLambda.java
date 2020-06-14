@@ -10,9 +10,7 @@ public class SortingWithLambda {
         List<Developer> developers = DeveloperHelper.getDevelopers();
 
         System.out.println("Before Sort");
-        for (Developer developer : developers) {
-            System.out.println(developer);
-        }
+        developers.forEach(System.out::println);
 
         //sort by age
         developers.sort((Developer o1, Developer o2) -> o1.getAge() - o2.getAge());
@@ -27,6 +25,6 @@ public class SortingWithLambda {
         // developers.sort(Comparator.comparing(Developer::getSalary));
 
         System.out.println("After Sort");
-        developers.forEach(developer -> System.out.println(developer));
+        developers.forEach(System.out::println);
     }
 }
