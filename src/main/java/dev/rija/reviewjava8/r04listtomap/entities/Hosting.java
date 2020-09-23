@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Hosting {
-	private int Id;
+	private int id;
 	private String name;
 	private long websites;
 }
