@@ -4,6 +4,7 @@ import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 
 /**
+ * BinaryOperator is a functional interface and it extends BiFunction
  * The BinaryOperator takes two arguments of the same type and returns a result of the same type of its arguments.
  *
  * BinaryOperator.java
