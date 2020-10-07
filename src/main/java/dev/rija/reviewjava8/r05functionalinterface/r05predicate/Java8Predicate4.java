@@ -14,7 +14,7 @@ public class Java8Predicate4 {
 		
 		List<String> list = Arrays.asList("A", "AA", "AAA", "B", "BB", "BBB");
 		
-		List<String> filteredList = list.stream()cd d
+		List<String> filteredList = list.stream()
 				.filter(startWithA.negate())
 				.collect(Collectors.toList());
 		
