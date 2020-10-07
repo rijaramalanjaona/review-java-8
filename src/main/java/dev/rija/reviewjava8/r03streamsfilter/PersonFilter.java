@@ -1,13 +1,13 @@
 package dev.rija.reviewjava8.r03streamsfilter;
 
-import dev.rija.reviewjava8.r03streamsfilter.entities.Person;
-import dev.rija.reviewjava8.r03streamsfilter.utils.DataGenerator;
+import dev.rija.reviewjava8.common.entities.Person;
+import dev.rija.reviewjava8.common.utils.PersonGenerator;
 
 import java.util.List;
 
 public class PersonFilter {
     public static void main(String[] args) {
-        List<Person> persons = DataGenerator.getPersons();
+        List<Person> persons = PersonGenerator.getPersons();
         Person person1 = persons.stream()
                 .filter(person -> "mkyong".equalsIgnoreCase(person.getName()))
                 .findAny()

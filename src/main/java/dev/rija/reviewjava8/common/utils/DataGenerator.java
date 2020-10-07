@@ -1,4 +1,4 @@
-package dev.rija.reviewjava8.r02foreach.utils;
+package dev.rija.reviewjava8.common.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

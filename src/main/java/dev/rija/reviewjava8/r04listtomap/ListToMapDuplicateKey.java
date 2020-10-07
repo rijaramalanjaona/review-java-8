@@ -1,7 +1,7 @@
 package dev.rija.reviewjava8.r04listtomap;
 
-import dev.rija.reviewjava8.r04listtomap.entities.Hosting;
-import dev.rija.reviewjava8.r04listtomap.utils.DataGenerator;
+import dev.rija.reviewjava8.common.entities.Hosting;
+import dev.rija.reviewjava8.common.utils.HostingGenerator;
 
 import java.util.List;
 import java.util.Map;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class ListToMapDuplicateKey {
 	public static void main(String[] args) {
-		List<Hosting> list = DataGenerator.getHostingsWithDuplicate();
+		List<Hosting> list = HostingGenerator.getHostingsWithDuplicate();
 		
 		/*// Map key = name, value = websites
 		Map<String, Long> result2 = list.stream().collect(Collectors.toMap(Hosting::getName, Hosting::getWebsites));

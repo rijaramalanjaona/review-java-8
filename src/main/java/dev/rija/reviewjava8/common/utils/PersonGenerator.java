@@ -1,11 +1,11 @@
-package dev.rija.reviewjava8.r03streamsfilter.utils;
+package dev.rija.reviewjava8.common.utils;
 
-import dev.rija.reviewjava8.r03streamsfilter.entities.Person;
+import dev.rija.reviewjava8.common.entities.Person;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class DataGenerator {
+public class PersonGenerator {
     public static List<String> getList() {
         return Arrays.asList("spring", "node", "mkyong");
     }

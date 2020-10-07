@@ -1,12 +1,12 @@
-package dev.rija.reviewjava8.r01lambdacomparator.utils;
+package dev.rija.reviewjava8.common.utils;
 
-import dev.rija.reviewjava8.r01lambdacomparator.entities.Developer;
+import dev.rija.reviewjava8.common.entities.Developer;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeveloperHelper {
+public class DeveloperGenerator {
     public static List<Developer> getDevelopers() {
         List<Developer> result = new ArrayList<>();
 

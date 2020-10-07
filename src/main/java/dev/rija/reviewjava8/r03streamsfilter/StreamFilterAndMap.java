@@ -1,14 +1,14 @@
 package dev.rija.reviewjava8.r03streamsfilter;
 
-import dev.rija.reviewjava8.r03streamsfilter.entities.Person;
-import dev.rija.reviewjava8.r03streamsfilter.utils.DataGenerator;
+import dev.rija.reviewjava8.common.entities.Person;
+import dev.rija.reviewjava8.common.utils.PersonGenerator;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class StreamFilterAndMap {
     public static void main(String[] args) {
-        List<Person> persons = DataGenerator.getPersons();
+        List<Person> persons = PersonGenerator.getPersons();
 
         System.out.println("Convert stream to String");
         String name = persons.stream()

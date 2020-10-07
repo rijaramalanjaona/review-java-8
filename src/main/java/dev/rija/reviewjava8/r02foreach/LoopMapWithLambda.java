@@ -1,6 +1,6 @@
 package dev.rija.reviewjava8.r02foreach;
 
-import dev.rija.reviewjava8.r02foreach.utils.DataGenerator;
+import dev.rija.reviewjava8.common.utils.DataGenerator;
 
 import java.util.Map;
 

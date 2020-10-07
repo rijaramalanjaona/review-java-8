@@ -1,4 +1,4 @@
-package dev.rija.reviewjava8.r04listtomap.entities;
+package dev.rija.reviewjava8.common.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

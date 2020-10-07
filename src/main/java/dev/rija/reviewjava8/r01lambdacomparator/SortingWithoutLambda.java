@@ -1,7 +1,7 @@
 package dev.rija.reviewjava8.r01lambdacomparator;
 
-import dev.rija.reviewjava8.r01lambdacomparator.entities.Developer;
-import dev.rija.reviewjava8.r01lambdacomparator.utils.DeveloperHelper;
+import dev.rija.reviewjava8.common.entities.Developer;
+import dev.rija.reviewjava8.common.utils.DeveloperGenerator;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class SortingWithoutLambda {
     public static void main(String[] args) {
-        List<Developer> developers = DeveloperHelper.getDevelopers();
+        List<Developer> developers = DeveloperGenerator.getDevelopers();
 
         System.out.println("Before Sort");
         for (Developer developer : developers) {

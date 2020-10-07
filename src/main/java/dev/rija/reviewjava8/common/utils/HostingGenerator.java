@@ -1,11 +1,11 @@
-package dev.rija.reviewjava8.r04listtomap.utils;
+package dev.rija.reviewjava8.common.utils;
 
-import dev.rija.reviewjava8.r04listtomap.entities.Hosting;
+import dev.rija.reviewjava8.common.entities.Hosting;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataGenerator {
+public class HostingGenerator {
 	public static List<Hosting> getHostings() {
 		List<Hosting> list = new ArrayList<>();
 		list.add(new Hosting(1, "liquidweb.com", 80000));

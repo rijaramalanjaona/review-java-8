@@ -1,7 +1,7 @@
 package dev.rija.reviewjava8.r04listtomap;
 
-import dev.rija.reviewjava8.r04listtomap.entities.Hosting;
-import dev.rija.reviewjava8.r04listtomap.utils.DataGenerator;
+import dev.rija.reviewjava8.common.entities.Hosting;
+import dev.rija.reviewjava8.common.utils.HostingGenerator;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class ListToMapSortAndCollect {
 	public static void main(String[] args) {
-		List<Hosting> list = DataGenerator.getHostingsWithDuplicate();
+		List<Hosting> list = HostingGenerator.getHostingsWithDuplicate();
 		
 		Map<String, Long> result2 = list.stream()
 				.collect(

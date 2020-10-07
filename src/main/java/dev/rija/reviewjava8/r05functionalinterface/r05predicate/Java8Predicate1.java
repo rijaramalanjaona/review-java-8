@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
  * }
  *
  * Predicate in filter
+ * filter() accepts predicate as argument.
  */
 public class Java8Predicate1 {
 	public static void main(String[] args) {
