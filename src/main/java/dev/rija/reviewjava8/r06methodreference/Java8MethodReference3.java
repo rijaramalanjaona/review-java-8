@@ -14,7 +14,6 @@ import java.util.function.BiFunction;
  * It passes a method reference static method IntegerUtils::join as an argument into another method that accepts a BiFunction.
  */
 public class Java8MethodReference3 {
-	
 	public static void main(String[] args) {
 		// anonymous class
 		String result1 = playTwoArguments(1, 2, new BiFunction<Integer, Integer, String>() {
