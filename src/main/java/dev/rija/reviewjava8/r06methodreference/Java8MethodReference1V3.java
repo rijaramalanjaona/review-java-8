@@ -13,7 +13,7 @@ import java.util.function.BiFunction;
  * This example joins two Integer and returns a String.
  * It passes a method reference static method IntegerUtils::join as an argument into another method that accepts a BiFunction.
  */
-public class Java8MethodReference3 {
+public class Java8MethodReference1V3 {
 	public static void main(String[] args) {
 		// anonymous class
 		String result1 = playTwoArguments(1, 2, new BiFunction<Integer, Integer, String>() {

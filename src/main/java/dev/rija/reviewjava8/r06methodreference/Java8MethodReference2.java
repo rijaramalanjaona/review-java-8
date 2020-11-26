@@ -1,45 +1,46 @@
 package dev.rija.reviewjava8.r06methodreference;
 
-import java.util.Arrays;
+import dev.rija.reviewjava8.common.entities.Developer;
+import dev.rija.reviewjava8.common.utils.DeveloperGenerator;
+
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 /**
- * 1. Static method
+ * 2. Reference to an instance method of a particular object Object::instanceMethodName
  * lambda expression
- * (args) -> ClassName.staticMethodName(args)
+ * (args) -> object.instanceMethodName(args)
  * =>
  * method reference
- * ClassName::staticMethodName
+ * object::instanceMethodName
  *
- * This example converts a list of Strings into a list of Integers, method reference to a static method Integer::parseInt.
+ * This example sorts a list of Employee by salary.
+ * We can reference to an instance method compareBySalary of a particular object ComparatorProvider
  */
 public class Java8MethodReference2 {
 	public static void main(String[] args) {
-		List<String> list = Arrays.asList("1", "2", "3");
+		List<Developer> developers = DeveloperGenerator.getDevelopers();
 		
-		// anonymous class
-		List<Integer> collect1 = list.stream()
-				.map(new Function<String, Integer>() {
-					@Override
-					public Integer apply(String s) {
-						return Integer.parseInt(s);
-					}
-				})
-				.collect(Collectors.toList());
-		System.out.println(collect1);
+		ComparatorProvider comparatorProvider = new ComparatorProvider();
 		
-		// lambda expression
-		List<Integer> collect2 = list.stream()
-				.map(s -> Integer.parseInt(s))
-				.collect(Collectors.toList());
-		System.out.println(collect2);
+		// lambda
+		developers.sort((developer1, developer2) -> comparatorProvider.compareBySalary(developer1, developer2));
+		developers.forEach(System.out::println);
+		/*
+		Developer(name=mkyong, salary=70000, age=33)
+		Developer(name=alvin, salary=80000, age=20)
+		Developer(name=jason, salary=100000, age=10)
+		Developer(name=iris, salary=170000, age=55)
+		*/
 		
+		List<Developer> developers2 = DeveloperGenerator.getDevelopers();
 		// method reference
-		List<Integer> collect3 = list.stream()
-				.map(Integer::parseInt)
-				.collect(Collectors.toList());
-		System.out.println(collect3);
+		developers2.sort(comparatorProvider::compareBySalary);
+		developers2.forEach(System.out::println);
+	}
+}
+
+class ComparatorProvider {
+	public int compareBySalary(Developer developer1, Developer developer2) {
+		return developer1.getSalary().compareTo(developer2.getSalary());
 	}
 }

@@ -22,7 +22,7 @@ import java.util.function.Consumer;
  * method reference
  * ClassName::staticMethodName
  */
-public class Java8MethodReference1 {
+public class Java8MethodReference1V1 {
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("A", "B", "C");
 		
