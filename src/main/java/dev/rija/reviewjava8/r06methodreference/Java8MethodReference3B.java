@@ -1,7 +1,6 @@
 package dev.rija.reviewjava8.r06methodreference;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import dev.rija.reviewjava8.common.entities.Invoice;
 
 import java.math.BigDecimal;
 import java.util.function.BiFunction;
@@ -60,12 +59,4 @@ class InvoiceCalculator {
 				.multiply(BigDecimal.valueOf(0.9))
 				.setScale(2, BigDecimal.ROUND_HALF_UP);
 	}
-}
-
-@Data
-@AllArgsConstructor
-class Invoice {
-	String id;
-	BigDecimal unitPrice;
-	Integer quantity;
 }
