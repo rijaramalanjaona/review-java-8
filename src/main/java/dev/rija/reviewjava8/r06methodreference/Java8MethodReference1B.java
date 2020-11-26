@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  *
  * This example converts a list of Strings into a list of Integers, method reference to a static method Integer::parseInt.
  */
-public class Java8MethodReference1V2 {
+public class Java8MethodReference1B {
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("1", "2", "3");
 		

@@ -12,7 +12,7 @@ import java.util.function.Consumer;
  *
  * Reference to a static method ClassName::staticMethodName
  * Reference to an instance method of a particular object Object::instanceMethodName
- * Reference to an instance method of an arbitrary object of a particular type ContainingType::methodName–
+ * Reference to an instance method of an arbitrary object of a particular type ContainingType::methodName
  * Reference to a constructor ClassName::new
  *
  * 1. Static method
@@ -22,7 +22,7 @@ import java.util.function.Consumer;
  * method reference
  * ClassName::staticMethodName
  */
-public class Java8MethodReference1V1 {
+public class Java8MethodReference1A {
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("A", "B", "C");
 		
